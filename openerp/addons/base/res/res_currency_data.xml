@@ -42,7 +42,7 @@
             <field name="name">CNY</field>
             <field name="symbol">¥</field>
             <field name="rounding">0.01</field>
-            <field name="active" eval="False"/>
+<!--        <field name="active" eval="False"/>  -->
         </record>
 
         <record id="COP" model="res.currency">

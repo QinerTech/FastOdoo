@@ -623,16 +623,17 @@ class AccountInvoice(models.Model):
     def tax_line_move_line_get(self):
         res = []
         for tax_line in self.tax_line_ids:
-            res.append({
-                'tax_line_id': tax_line.tax_id.id,
-                'type': 'tax',
-                'name': tax_line.name,
-                'price_unit': tax_line.amount,
-                'quantity': 1,
-                'price': tax_line.amount,
-                'account_id': tax_line.account_id.id,
-                'account_analytic_id': tax_line.account_analytic_id.id,
-            })
+            if tax_line.amount:
+                res.append({
+                    'tax_line_id': tax_line.tax_id.id,
+                    'type': 'tax',
+                    'name': tax_line.name,
+                    'price_unit': tax_line.amount,
+                    'quantity': 1,
+                    'price': tax_line.amount,
+                    'account_id': tax_line.account_id.id,
+                    'account_analytic_id': tax_line.account_analytic_id.id,
+                })
         return res
 
     def inv_line_characteristic_hashcode(self, invoice_line):
@@ -960,7 +961,7 @@ class AccountInvoice(models.Model):
         recs = self.browse(cr, uid, ids, context)
         pay_journal = self.pool.get('account.journal').browse(cr, uid, pay_journal_id, context=context)
         writeoff_acc = self.pool.get('account.account').browse(cr, uid, writeoff_acc_id, context=context)
-        return recs.pay_and_reconcile(pay_journal, pay_amount, date, writeoff_acc)
+        return AccountInvoice.pay_and_reconcile(recs, pay_journal, pay_amount, date, writeoff_acc)
 
     @api.multi
     def _track_subtype(self, init_values):

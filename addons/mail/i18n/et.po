@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-01-13 14:27+0000\n"
-"PO-Revision-Date: 2016-01-27 10:49+0000\n"
+"PO-Revision-Date: 2016-02-19 06:59+0000\n"
 "Last-Translator: Martin Trigaux\n"
 "Language-Team: Estonian (http://www.transifex.com/odoo/odoo-9/language/et/)\n"
 "MIME-Version: 1.0\n"
@@ -858,6 +858,13 @@ msgstr ""
 
 #. module: mail
 #. openerp-web
+#: code:addons/mail/static/src/xml/systray.xml:14
+#, python-format
+msgid "Conversations"
+msgstr ""
+
+#. module: mail
+#. openerp-web
 #: code:addons/mail/static/src/js/client_action.js:250
 #, python-format
 msgid "Create %s"
@@ -1041,7 +1048,7 @@ msgstr "Arutelud"
 #: model:ir.model.fields,field_description:mail.field_mail_wizard_invite_display_name
 #: model:ir.model.fields,field_description:mail.field_publisher_warranty_contract_display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Näidatav nimi"
 
 #. module: mail
 #: model:ir.ui.view,arch_db:mail.email_template_form
@@ -2139,6 +2146,11 @@ msgid "Notify followers of the document (mass post only)"
 msgstr ""
 
 #. module: mail
+#: code:addons/mail/static/src/js/thread.js:140
+msgid "now"
+msgstr ""
+
+#. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_channel_message_needaction_counter
 #: model:ir.model.fields,field_description:mail.field_mail_thread_message_needaction_counter
 #: model:ir.model.fields,field_description:mail.field_res_partner_message_needaction_counter
@@ -2160,7 +2172,7 @@ msgstr ""
 #: model:ir.model.fields,help:mail.field_res_partner_message_unread_counter
 #: model:ir.model.fields,help:mail.field_res_users_message_unread_counter
 msgid "Number of unread messages"
-msgstr ""
+msgstr "Lugemata sõnumite arv"
 
 #. module: mail
 #: model:ir.actions.act_window,help:mail.action_contacts

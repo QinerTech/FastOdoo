@@ -7,7 +7,7 @@
 # Antonio Trueba, 2016
 # Carlos Eduardo Rodriguez Rossi <crodriguez@samemotion.com>, 2016
 # Carlos rodriguez <carlosalbertor436@gmail.com>, 2016
-# Jesus Alan Ramos Rodriguez <alan.ramos@jarsa.com.mx>, 2015
+# Jesus Alan Ramos Rodriguez <alan.ramos@jarsa.com.mx>, 2015-2016
 # Mario Calvar <ventas.bbca@gmail.com>, 2015
 # Martin Trigaux, 2016
 msgid ""
@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-01-13 09:40+0000\n"
-"PO-Revision-Date: 2016-01-30 10:36+0000\n"
+"PO-Revision-Date: 2016-02-16 10:36+0000\n"
 "Last-Translator: Martin Trigaux\n"
 "Language-Team: Spanish (http://www.transifex.com/odoo/odoo-9/language/es/)\n"
 "MIME-Version: 1.0\n"
@@ -70,7 +70,7 @@ msgid ""
 "same product(%s), same location(%s), same package, same owner and same lot. "
 "Please first validate the first inventory adjustement with this product "
 "before creating another one."
-msgstr ""
+msgstr "No se puede tener dos ajustes de inventario en el estado 'en Progreso' con el mismo producto (%s), misma ubicación (%s), mismo paquete, el mismo propietario y mismo lote. Por favor, primero validar el primer ajuste de inventario con este producto antes de crear otro."
 
 #. module: stock
 #: code:addons/stock/stock.py:3482
@@ -378,7 +378,7 @@ msgstr "<span>Necesita instalar la aplicación de gestión de compras para este 
 #: model:ir.ui.view,arch_db:stock.inventory_planner
 msgid ""
 "<span>You need to install the Sales Management app for this flow.</span>"
-msgstr "<span> Es necesario instalar la aplicación de gestión de ventas para esta acción. </ span>"
+msgstr "<span>Es necesario instalar la aplicación de gestión de ventas para esta acción.</span>"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.inventory_planner
@@ -409,19 +409,19 @@ msgstr ""
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.report_picking
 msgid "<strong>Barcode</strong>"
-msgstr "<strong> Código de barras </ strong>"
+msgstr "<strong>Código de barras</strong>"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.inventory_planner
 msgid ""
 "<strong>Buy:</strong> the product is bought from a vendor through a Purchase"
 " Order"
-msgstr "<strong> Comprar: </strong> el producto se compra a un vendedor a través de una Orden de Compra"
+msgstr "<strong>Comprar:</strong> el producto es comprado de un proveedor, a travez de un Pedido de Compra"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.report_picking
 msgid "<strong>Commitment Date</strong>"
-msgstr "<strong>Fecha de compromiso</ strong>"
+msgstr "<strong>Fecha de compromiso</strong>"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.inventory_planner
@@ -459,7 +459,7 @@ msgstr "<strong>Inventario</strong>"
 #: model:ir.ui.view,arch_db:stock.report_delivery_document
 #: model:ir.ui.view,arch_db:stock.report_inventory
 msgid "<strong>Location</strong>"
-msgstr "<strong> Localización </ strong>"
+msgstr "<strong>Localización</strong>"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.inventory_planner
@@ -1924,7 +1924,7 @@ msgstr ""
 #. module: stock
 #: selection:stock.config.settings,group_stock_multiple_locations:0
 msgid "Do not record internal moves within a warehouse"
-msgstr ""
+msgstr "No registrar movimientos internos dentro del mismo almacén"
 
 #. module: stock
 #: selection:stock.config.settings,group_stock_production_lot:0
@@ -2029,7 +2029,7 @@ msgstr "Fecha prevista"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_config_settings_module_product_expiry
 msgid "Expiration Dates"
-msgstr ""
+msgstr "Fechas de caducidad"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.view_location_form
@@ -2520,14 +2520,6 @@ msgstr ""
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.inventory_planner
-msgid ""
-"If you need help, do not hesitate to contact our experts\n"
-"                        using the <span class=\"fa fa-question-circle\"/> button on\n"
-"                        the top bar."
-msgstr ""
-
-#. module: stock
-#: model:ir.ui.view,arch_db:stock.inventory_planner
 msgid "If you want to do it yourself:"
 msgstr "Si desea hacerlo usted mismo:"
 
@@ -2850,7 +2842,7 @@ msgstr "Rutas de inventario"
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.inventory_planner
 msgid "Inventory Settings"
-msgstr ""
+msgstr "Configuración de inventario"
 
 #. module: stock
 #: model:ir.ui.menu,name:stock.menu_quants

@@ -181,7 +181,7 @@
                   <script src="/web/static/lib/jquery/jquery.js" type="text/javascript"/>
                 </t>
                 <t t-set="body_classname" t-value="'container'"/>
-                <div class="row">
+                <div class="row" style="padding-top:50px">
                   <div class="col-md-4 col-md-offset-4 o_database_list">
                     <div class="text-center">
                       <img t-attf-src="/web/binary/company_logo{{ '?dbname='+db if db else '' }}"/>

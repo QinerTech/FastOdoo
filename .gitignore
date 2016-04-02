@@ -1,3 +1,4 @@
+/odoo-server.conf
 /odoo-server.log
 # sphinx build directories
 _build/

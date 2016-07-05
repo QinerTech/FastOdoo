@@ -138,12 +138,13 @@
                         <div class="oe_title">
                             <label for="name" class="oe_edit_only"/>
                             <h1><field name="name" required="1"/></h1>
-                            <field name="email" invisible="1"/>
                             <label for="login" class="oe_edit_only" string="Email Address"/>
                             <h2>
                                 <field name="login" on_change="on_change_login(login)"
                                         placeholder="email@yourcompany.com"/>
                             </h2>
+                            <label for="email" class="oe_edit_only" string="Email Address"/>
+                            <field name="email" placeholder="email@yourcompany.com"/>
                             <label for="company_id" class="oe_edit_only" groups="base.group_light_multi_company"/>
                             <field name="company_id" context="{'user_preference': 0}" groups="base.group_light_multi_company"/>
                         </div>

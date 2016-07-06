@@ -1481,7 +1481,7 @@ msgstr "设置你已经达到这个目标的当前值"
 #. module: gamification
 #: model:gamification.goal.definition,name:gamification.definition_base_company_data
 msgid "Set your Company Data"
-msgstr "设置你的公司数据"
+msgstr "设置你的公司信息"
 
 #. module: gamification
 #: model:gamification.goal.definition,name:gamification.definition_base_company_logo

@@ -232,7 +232,7 @@ msgstr "... 上传中"
 #. module: web
 #: model:ir.ui.view,arch_db:web.menu_secondary
 msgid "<span class=\"oe_logo_edit\">Edit Company data</span>"
-msgstr "<span class=\"oe_logo_edit\">编辑公司数据</span>"
+msgstr "<span class=\"oe_logo_edit\">编辑公司信息</span>"
 
 #. module: web
 #: model:ir.ui.view,arch_db:web.menu_secondary

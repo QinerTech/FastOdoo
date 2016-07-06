@@ -2631,7 +2631,7 @@ msgstr "配置会计"
 #. module: account
 #: model:ir.ui.view,arch_db:account.view_account_config_settings
 msgid "Configure your company data"
-msgstr "配置你的公司数据"
+msgstr "配置你的公司信息"
 
 #. module: account
 #: model:ir.ui.view,arch_db:account.view_account_bnk_stmt_cashbox

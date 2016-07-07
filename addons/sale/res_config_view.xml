@@ -26,11 +26,6 @@
                             <field name="group_pricelist_item" class="oe_inline" invisible="1"/>
                             <field name="group_product_pricelist" class="oe_inline" invisible="1"/>
                         </div>
-                        <label for="id" string="Subscriptions"/>
-                        <div>
-                            <field name="module_sale_contract" class="oe_inline" widget="upgrade_boolean"/>
-                            <label for="module_sale_contract"/>
-                        </div>
                         <label for="id" string="Customer portal"/>
                         <div>
                             <div>

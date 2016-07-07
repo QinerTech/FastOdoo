@@ -89,17 +89,6 @@
                                 string="Configure website menus" class="oe_link"/>
                         </group>
                         <group string="Advanced" name="advanced">
-                            <label for="id" string="Extra Features"/>
-                            <div>
-                                <div>
-                                    <field name="module_website_form_editor" widget="upgrade_boolean"/>
-                                    <label for="module_website_form_editor"/>
-                                </div>
-                                <div>
-                                    <field name="module_website_version" widget="upgrade_boolean"/>
-                                    <label for="module_website_version"/>
-                                </div>
-                            </div>
                             <label for="id" string="Optimization" groups="base.group_no_one"/>
                             <div groups="base.group_no_one">
                                 <div>

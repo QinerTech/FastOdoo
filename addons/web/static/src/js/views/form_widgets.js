@@ -1672,13 +1672,13 @@ var AbstractFieldUpgrade = {
             $content: $('<div>', {
                 html: message,
             }),
-            title: _t("Odoo Enterprise"),
+            title: _t("QERP Enterprise"),
         }).open();
     },
   
     confirm_upgrade: function() {
         new Model("res.users").call("search_count", [[["share", "=", false]]]).then(function(data) {
-            framework.redirect("https://www.odoo.com/odoo-enterprise/upgrade?num_users=" + data);
+            framework.redirect("https://www.qiner.com.cn/qerp-enterprise/upgrade?num_users=" + data);
         });
     },
     

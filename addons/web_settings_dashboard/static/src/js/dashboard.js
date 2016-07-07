@@ -17,7 +17,8 @@ var Dashboard = Widget.extend({
     template: 'DashboardMain',
 
     init: function(parent, data){
-        this.all_dashboards = ['apps', 'invitations', 'planner', 'share'];
+        this.all_dashboards = ['invitations'];
+//        this.all_dashboards = ['apps', 'invitations', 'planner', 'share'];
         return this._super.apply(this, arguments);
     },
 

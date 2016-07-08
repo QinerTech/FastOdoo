@@ -33,7 +33,9 @@ var Dialog = Widget.extend({
         this._super(parent);
 
         options = _.defaults(options || {}, {
-            title: _t('Odoo'), subtitle: '',
+//Qiner,20160708, Change the tile for dialog
+            title: _t('QinerERP'), subtitle: '',
+            title: _t('QinerERP'), subtitle: '',
             size: 'large',
             dialogClass: '',
             $content: false,
